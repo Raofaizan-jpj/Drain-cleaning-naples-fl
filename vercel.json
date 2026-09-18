@@ -124,12 +124,7 @@
     },
     {
       "source": "/services.html",
-      "destination": "/#services",
-      "permanent": true
-    },
-    {
-      "source": "/services",
-      "destination": "/#services",
+      "destination": "/services",
       "permanent": true
     },
     {
