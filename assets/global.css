@@ -562,6 +562,33 @@ small {
   min-width: 20px;
 }
 
+.nav-dropdown-menu-sm {
+  width: min(320px, 92vw);
+  padding: 16px;
+}
+
+.dropdown-grid-locations {
+  grid-template-columns: 1fr;
+  gap: 3px;
+}
+
+.dropdown-grid a.dropdown-view-all {
+  margin-top: 6px;
+  padding-top: 10px !important;
+  border-top: 1px solid var(--line);
+  color: var(--red) !important;
+  font-weight: 800 !important;
+}
+
+.dropdown-grid a.dropdown-view-all span {
+  color: var(--red);
+}
+
+.dropdown-grid a.dropdown-view-all:hover {
+  background: var(--accent-tint);
+  color: var(--accent-dark) !important;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
