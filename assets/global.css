@@ -375,6 +375,19 @@ small {
   text-transform: uppercase;
 }
 
+.brand-logo {
+  height: 48px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-brand .brand-logo {
+  height: 52px;
+  max-width: 240px;
+}
+
 .brand-mark {
   position: relative;
   display: grid;
