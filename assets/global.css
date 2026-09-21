@@ -376,16 +376,32 @@ small {
 }
 
 .brand-logo {
-  height: 48px;
+  height: 68px;
   width: auto;
-  max-width: 220px;
+  max-width: 290px;
   display: block;
   object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.02);
 }
 
 .footer-brand .brand-logo {
-  height: 52px;
-  max-width: 240px;
+  height: 74px;
+  max-width: 310px;
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 52px;
+    max-width: 220px;
+  }
+  .footer-brand .brand-logo {
+    height: 58px;
+    max-width: 240px;
+  }
 }
 
 .brand-mark {
