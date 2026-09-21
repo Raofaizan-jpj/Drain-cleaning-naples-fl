@@ -169,18 +169,11 @@ small {
 }
 
 .eyebrow {
-  display: block;
-  margin-bottom: 16px;
-  color: var(--red);
-  font-size: 0.8125rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  line-height: 1.3;
-  text-transform: uppercase;
+  display: none !important;
 }
 
 .eyebrow-light {
-  color: var(--accent-soft);
+  display: none !important;
 }
 
 .lede {
