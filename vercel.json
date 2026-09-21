@@ -18,23 +18,8 @@
       "permanent": true
     },
     {
-      "source": "/broken-drain-line-repair.html",
-      "destination": "/broken-drain-line-repair",
-      "permanent": true
-    },
-    {
       "source": "/clogged-drain-unclog.html",
       "destination": "/clogged-drain-unclog",
-      "permanent": true
-    },
-    {
-      "source": "/clogged-main-sewer-line-backing-up-flooding.html",
-      "destination": "/clogged-main-sewer-line-backing-up-flooding",
-      "permanent": true
-    },
-    {
-      "source": "/commercial-drain-service.html",
-      "destination": "/commercial-drain-service",
       "permanent": true
     },
     {
@@ -43,43 +28,13 @@
       "permanent": true
     },
     {
-      "source": "/dishwasher-air-gap-leak.html",
-      "destination": "/dishwasher-air-gap-leak",
-      "permanent": true
-    },
-    {
-      "source": "/drain-cleaning-abc.html",
-      "destination": "/drain-cleaning-abc",
-      "permanent": true
-    },
-    {
-      "source": "/drain-cleaning-clogged-ground-drain.html",
-      "destination": "/drain-cleaning-clogged-ground-drain",
-      "permanent": true
-    },
-    {
-      "source": "/drain-grate-removal.html",
-      "destination": "/drain-grate-removal",
-      "permanent": true
-    },
-    {
       "source": "/drain-line-leak.html",
       "destination": "/drain-line-leak",
       "permanent": true
     },
     {
-      "source": "/drain-pipe-repair.html",
-      "destination": "/drain-pipe-repair",
-      "permanent": true
-    },
-    {
       "source": "/drain-snaking-cabling.html",
       "destination": "/drain-snaking-cabling",
-      "permanent": true
-    },
-    {
-      "source": "/french-drain-service.html",
-      "destination": "/french-drain-service",
       "permanent": true
     },
     {
@@ -98,26 +53,6 @@
       "permanent": true
     },
     {
-      "source": "/main-drain-clog.html",
-      "destination": "/main-drain-clog",
-      "permanent": true
-    },
-    {
-      "source": "/mainline-blockage-clearing.html",
-      "destination": "/mainline-blockage-clearing",
-      "permanent": true
-    },
-    {
-      "source": "/mainline-drain-cleaning.html",
-      "destination": "/mainline-drain-cleaning",
-      "permanent": true
-    },
-    {
-      "source": "/pipe-blockage.html",
-      "destination": "/pipe-blockage",
-      "permanent": true
-    },
-    {
       "source": "/privacy-policy.html",
       "destination": "/privacy-policy",
       "permanent": true
@@ -130,46 +65,6 @@
     {
       "source": "/sewer-cleaning.html",
       "destination": "/sewer-cleaning",
-      "permanent": true
-    },
-    {
-      "source": "/shower-tub-drain-clog.html",
-      "destination": "/shower-tub-drain-clog",
-      "permanent": true
-    },
-    {
-      "source": "/slow-drain-clogged-bathroom-sink.html",
-      "destination": "/slow-drain-clogged-bathroom-sink",
-      "permanent": true
-    },
-    {
-      "source": "/water-backing-up-under-tub-shower.html",
-      "destination": "/water-backing-up-under-tub-shower",
-      "permanent": true
-    },
-    {
-      "source": "/port-royal.html",
-      "destination": "/port-royal",
-      "permanent": true
-    },
-    {
-      "source": "/old-naples.html",
-      "destination": "/old-naples",
-      "permanent": true
-    },
-    {
-      "source": "/pelican-bay.html",
-      "destination": "/pelican-bay",
-      "permanent": true
-    },
-    {
-      "source": "/park-shore-the-moorings.html",
-      "destination": "/park-shore-the-moorings",
-      "permanent": true
-    },
-    {
-      "source": "/north-naples.html",
-      "destination": "/north-naples",
       "permanent": true
     }
   ]
