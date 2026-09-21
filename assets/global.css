@@ -2336,6 +2336,50 @@ small {
   margin: 0;
 }
 
+.footer-social-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.share-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 2px;
+}
+
+.share-btn {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: var(--paper);
+  transition: all 0.2s ease;
+}
+
+.share-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.share-btn:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
 .socials {
   display: flex;
   gap: 8px;
