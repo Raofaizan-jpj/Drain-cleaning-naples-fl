@@ -66,6 +66,31 @@
       "source": "/sewer-cleaning.html",
       "destination": "/sewer-cleaning",
       "permanent": true
+    },
+    {
+      "source": "/north-naples.html",
+      "destination": "/north-naples",
+      "permanent": true
+    },
+    {
+      "source": "/old-naples.html",
+      "destination": "/old-naples",
+      "permanent": true
+    },
+    {
+      "source": "/pelican-bay.html",
+      "destination": "/pelican-bay",
+      "permanent": true
+    },
+    {
+      "source": "/park-shore-the-moorings.html",
+      "destination": "/park-shore-the-moorings",
+      "permanent": true
+    },
+    {
+      "source": "/port-royal.html",
+      "destination": "/port-royal",
+      "permanent": true
     }
   ]
 }
