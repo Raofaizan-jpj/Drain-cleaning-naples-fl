@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -129,9 +129,10 @@
   <link rel="icon"
     href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2032%2032%27%3E%3Crect%20width=%2732%27%20height=%2732%27%20fill=%27%230b1e3a%27/%3E%3Crect%20x=%2719%27%20y=%2719%27%20width=%2713%27%20height=%2713%27%20fill=%27%230D9488%27/%3E%3Ctext%20x=%2714%27%20y=%2723%27%20font-family=%27Arial,sans-serif%27%20font-size=%2719%27%20font-weight=%27700%27%20fill=%27%23ffffff%27%20text-anchor=%27middle%27%3ED%3C/text%3E%3C/svg%3E"
     type="image/svg+xml" />
-  <link rel="preload" as="image" href="assets/images/gen/drain-cleaning-advisor-technician-at-work-7e42e64b.webp"
-    fetchpriority="high" />
   <meta name="theme-color" content="#0b1e3a" />
+  <!-- LCP preload: must be before stylesheet -->
+  <link rel="preload" as="image" href="/assets/images/gen/drain-cleaning-advisor-technician-at-work-7e42e64b.webp"
+    fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style"
@@ -151,7 +152,7 @@
     </style>
   </noscript>
   <!--rl-leads-->
-  <script>window.__RL_LEADS = { siteId: "6aace2dcc2e1089cd0adb9e4", apiBase: "https://ranklocal.cc", turnstileSiteKey: "" };</script>
+  <script defer>window.__RL_LEADS = { siteId: "6aace2dcc2e1089cd0adb9e4", apiBase: "https://ranklocal.cc", turnstileSiteKey: "" };</script>
   <script>
     (function () {
       function cfg() {
@@ -288,8 +289,13 @@
     <div id="hero-container">
       <section class="hero">
         <div class="hero-visual" data-media-slot="homepage-hero">
-          <img src="assets/images/gen/drain-cleaning-advisor-technician-at-work-7e42e64b.webp"
-            alt="Drain Cleaning Advisor technician at work" />
+          <img src="/assets/images/gen/drain-cleaning-advisor-technician-at-work-7e42e64b.webp"
+            alt="Drain Cleaning Advisor technician at work"
+            fetchpriority="high"
+            loading="eager"
+            decoding="sync"
+            width="900"
+            height="600" />
         </div>
         <div class="shell hero-grid">
           <div class="hero-copy" data-sal="slide-up" data-sal-duration="650">
