@@ -1,4 +1,4 @@
-/* THEME 10 — "Ironside" front-end behaviours. Sections are inlined at
+﻿/* THEME 10 — "Ironside" front-end behaviours. Sections are inlined at
    generation time, so there is no client-side component loading.
 
    Lead capture on static city/state exports is NOT handled here: forms carry
@@ -231,7 +231,7 @@ function initLeadForms() {
 }
 
 /* Dynamic Canonical Tag Utility */
-const SITE_URL = "https://draincleaningnaplesfl.com";
+const SITE_URL = "https://draincleaningnaplesflorida.com";
 
 function initCanonical() {
   try {
