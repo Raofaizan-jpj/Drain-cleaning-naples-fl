@@ -91,6 +91,63 @@
       "source": "/port-royal.html",
       "destination": "/port-royal",
       "permanent": true
+    },
+    {
+      "source": "/shower-tub-drain-clog",
+      "destination": "/sewer-cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/pipe-blockage",
+      "destination": "/clogged-drain-unclog",
+      "permanent": true
+    },
+    {
+      "source": "/drain-pipe-repair",
+      "destination": "/drain-line-leak",
+      "permanent": true
+    },
+    {
+      "source": "/drain-cleaning-clogged-ground-drain",
+      "destination": "/clogged-drain-unclog",
+      "permanent": true
+    },
+    {
+      "source": "/mainline-drain-cleaning",
+      "destination": "/sewer-cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/drain-cleaning-abc",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-drain-service",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/french-drain-service",
+      "destination": "/services",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/_drafts/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/_drafts/(.*)",
+      "destination": "/404"
     }
   ]
 }
