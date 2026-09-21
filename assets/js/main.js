@@ -230,10 +230,33 @@ function initLeadForms() {
   });
 }
 
+/* Dynamic Canonical Tag Utility */
+const SITE_URL = "https://draincleaningnaplesfl.com";
+
+function initCanonical() {
+  try {
+    let canonical = document.querySelector('link[rel="canonical"]');
+    const pathname = window.location.pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
+    const cleanPath = (pathname === "" || pathname === "/") ? "/" : pathname.replace(/\/+$/, "");
+    const expectedUrl = `${SITE_URL}${cleanPath}`;
+    
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    if (canonical.getAttribute("href") !== expectedUrl) {
+      canonical.setAttribute("href", expectedUrl);
+    }
+  } catch (_e) {}
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  initCanonical();
   initNavigation();
   initOfferCodes();
   initNewsletter();
   initLeadForms();
   initReveal();
 });
+
