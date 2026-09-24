@@ -895,23 +895,26 @@ small {
 .trust-grid article {
   display: flex;
   align-items: center;
-  gap: 11px;
-  padding: 6px 8px;
-  border-radius: 8px;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease;
-  cursor: default;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
 }
 
 .trust-grid article:hover {
-  background: rgba(255, 255, 255, 0.65);
-  transform: translateY(-2px);
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(11, 30, 58, 0.08);
+  border-color: rgba(13, 148, 136, 0.18);
 }
 
 .trust-grid b {
   display: grid;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
   place-items: center;
   border: 1.5px solid #bfdbfe;
   border-radius: 50%;
@@ -919,18 +922,22 @@ small {
   color: #2563eb;
   font-family: var(--heading);
   font-size: 1rem;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .trust-grid b svg {
   display: block;
   width: 20px;
   height: 20px;
-  transition: transform 0.25s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.trust-grid article:hover b {
+  transform: scale(1.08);
 }
 
 .trust-grid article:hover b svg {
-  transform: scale(1.08);
+  transform: scale(1.15);
 }
 
 .trust-grid article:nth-child(1) b {
@@ -938,11 +945,12 @@ small {
   background: #eff6ff;
   border-color: #bfdbfe;
 }
-.trust-grid article:nth-child(1):hover b {
+.trust-grid article:nth-child(1):hover b,
+.trust-grid article:nth-child(1) b:hover {
   color: #ffffff;
   background: #2563eb;
   border-color: #2563eb;
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.4);
 }
 
 .trust-grid article:nth-child(2) b {
@@ -950,11 +958,12 @@ small {
   background: #f0fdfa;
   border-color: #99f6e4;
 }
-.trust-grid article:nth-child(2):hover b {
+.trust-grid article:nth-child(2):hover b,
+.trust-grid article:nth-child(2) b:hover {
   color: #ffffff;
   background: #0d9488;
   border-color: #0d9488;
-  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
+  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.4);
 }
 
 .trust-grid article:nth-child(3) b {
@@ -962,11 +971,12 @@ small {
   background: #eef2ff;
   border-color: #c7d2fe;
 }
-.trust-grid article:nth-child(3):hover b {
+.trust-grid article:nth-child(3):hover b,
+.trust-grid article:nth-child(3) b:hover {
   color: #ffffff;
   background: #4f46e5;
   border-color: #4f46e5;
-  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.4);
 }
 
 .trust-grid article:nth-child(4) b {
@@ -974,11 +984,12 @@ small {
   background: #fffbeb;
   border-color: #fde68a;
 }
-.trust-grid article:nth-child(4):hover b {
+.trust-grid article:nth-child(4):hover b,
+.trust-grid article:nth-child(4) b:hover {
   color: #ffffff;
   background: #d97706;
   border-color: #d97706;
-  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.4);
 }
 
 .trust-grid article:nth-child(5) b {
@@ -986,11 +997,12 @@ small {
   background: #f0fdf4;
   border-color: #bbf7d0;
 }
-.trust-grid article:nth-child(5):hover b {
+.trust-grid article:nth-child(5):hover b,
+.trust-grid article:nth-child(5) b:hover {
   color: #ffffff;
   background: #16a34a;
   border-color: #16a34a;
-  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35);
+  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.4);
 }
 
 .trust-grid strong,
