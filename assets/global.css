@@ -896,6 +896,15 @@ small {
   display: flex;
   align-items: center;
   gap: 11px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease;
+  cursor: default;
+}
+
+.trust-grid article:hover {
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateY(-2px);
 }
 
 .trust-grid b {
@@ -910,13 +919,18 @@ small {
   color: #2563eb;
   font-family: var(--heading);
   font-size: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .trust-grid b svg {
   display: block;
   width: 20px;
   height: 20px;
+  transition: transform 0.25s ease;
+}
+
+.trust-grid article:hover b svg {
+  transform: scale(1.08);
 }
 
 .trust-grid article:nth-child(1) b {
@@ -924,11 +938,23 @@ small {
   background: #eff6ff;
   border-color: #bfdbfe;
 }
+.trust-grid article:nth-child(1):hover b {
+  color: #ffffff;
+  background: #2563eb;
+  border-color: #2563eb;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
 
 .trust-grid article:nth-child(2) b {
   color: #0d9488;
   background: #f0fdfa;
   border-color: #99f6e4;
+}
+.trust-grid article:nth-child(2):hover b {
+  color: #ffffff;
+  background: #0d9488;
+  border-color: #0d9488;
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
 }
 
 .trust-grid article:nth-child(3) b {
@@ -936,17 +962,35 @@ small {
   background: #eef2ff;
   border-color: #c7d2fe;
 }
+.trust-grid article:nth-child(3):hover b {
+  color: #ffffff;
+  background: #4f46e5;
+  border-color: #4f46e5;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+}
 
 .trust-grid article:nth-child(4) b {
   color: #d97706;
   background: #fffbeb;
   border-color: #fde68a;
 }
+.trust-grid article:nth-child(4):hover b {
+  color: #ffffff;
+  background: #d97706;
+  border-color: #d97706;
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35);
+}
 
 .trust-grid article:nth-child(5) b {
   color: #16a34a;
   background: #f0fdf4;
   border-color: #bbf7d0;
+}
+.trust-grid article:nth-child(5):hover b {
+  color: #ffffff;
+  background: #16a34a;
+  border-color: #16a34a;
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35);
 }
 
 .trust-grid strong,
