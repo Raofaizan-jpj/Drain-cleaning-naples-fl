@@ -209,19 +209,19 @@ small {
 
 .button {
   display: inline-flex;
-  min-height: 50px;
+  min-height: 60px;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 0 22px;
+  gap: 14px;
+  padding: 0 34px;
   border: 2px solid transparent;
   background: var(--red);
   box-shadow: 5px 5px 0 rgba(11, 30, 58, 0.22);
   color: var(--paper);
   font-family: var(--heading);
-  font-size: 0.96rem;
-  font-weight: 700;
-  letter-spacing: 0.035em;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
   line-height: 1;
   text-transform: uppercase;
   transition:
@@ -244,7 +244,7 @@ small {
 }
 
 .button-outline {
-  border-color: rgba(255, 255, 255, 0.6);
+  border: 2.5px solid rgba(255, 255, 255, 0.9);
   background: transparent;
   box-shadow: none;
 }
@@ -261,9 +261,10 @@ small {
 }
 
 .button-small {
-  min-height: 42px;
-  padding-inline: 17px;
-  font-size: 0.83rem;
+  min-height: 50px;
+  padding-inline: 24px;
+  font-size: 1.05rem;
+  font-weight: 800;
 }
 
 .text-link {
@@ -320,7 +321,71 @@ small {
 
 .utility-inner div {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 20px;
+}
+
+.utility-socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 5px;
+}
+
+.utility-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.utility-socials a svg {
+  display: block;
+  width: 12px;
+  height: 12px;
+  transition: transform 0.25s ease;
+}
+
+.utility-socials a:hover {
+  background: var(--teal, #0D9488);
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.15);
+  box-shadow: 0 0 10px rgba(13, 148, 136, 0.75), 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.utility-socials a[data-social="facebook"]:hover {
+  background: #1877f2;
+  box-shadow: 0 0 10px rgba(24, 119, 242, 0.75);
+}
+
+.utility-socials a[data-social="x"]:hover {
+  background: #000000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.utility-socials a[data-social="instagram"]:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  box-shadow: 0 0 10px rgba(225, 48, 108, 0.75);
+}
+
+.utility-socials a[data-social="linkedin"]:hover {
+  background: #0a66c2;
+  box-shadow: 0 0 10px rgba(10, 102, 194, 0.75);
+}
+
+.utility-socials a[data-social="youtube"]:hover {
+  background: #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.75);
+}
+
+.utility-socials a:hover svg {
+  transform: scale(1.1);
 }
 
 .live-dot {
@@ -603,6 +668,15 @@ small {
   gap: 16px;
 }
 
+.nav-actions .button {
+  min-height: 52px;
+  padding: 0 28px;
+  font-size: 1.18rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
 .nav-phone {
   display: flex;
   flex-direction: column;
@@ -698,8 +772,17 @@ small {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 13px;
+  align-items: center;
+  gap: 15px;
   margin-bottom: 28px;
+}
+
+.hero-actions .button {
+  min-height: 62px;
+  padding: 0 38px;
+  font-size: 1.18rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
 }
 
 .hero-points {

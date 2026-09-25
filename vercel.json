@@ -103,6 +103,21 @@
       "permanent": true
     },
     {
+      "source": "/dishwasher-air-gap-leak.html",
+      "destination": "/dishwasher-air-gap-leak",
+      "permanent": true
+    },
+    {
+      "source": "/french-drain-service.html",
+      "destination": "/french-drain-service",
+      "permanent": true
+    },
+    {
+      "source": "/mainline-drain-cleaning.html",
+      "destination": "/mainline-drain-cleaning",
+      "permanent": true
+    },
+    {
       "source": "/pipe-blockage",
       "destination": "/clogged-drain-unclog",
       "permanent": true
@@ -113,22 +128,12 @@
       "permanent": true
     },
     {
-      "source": "/mainline-drain-cleaning",
-      "destination": "/sewer-cleaning",
-      "permanent": true
-    },
-    {
       "source": "/drain-cleaning-abc",
       "destination": "/",
       "permanent": true
     },
     {
       "source": "/commercial-drain-service",
-      "destination": "/services",
-      "permanent": true
-    },
-    {
-      "source": "/french-drain-service",
       "destination": "/services",
       "permanent": true
     }
