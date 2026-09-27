@@ -1,15 +1,10 @@
+# Static HTML to Clean URL Canonical Redirects
 /index.html / 301!
 /about.html /about 301!
 /blog.html /blog 301!
-/broken-drain-line-repair.html /broken-drain-line-repair 301!
 /clogged-drain-unclog.html /clogged-drain-unclog 301!
-/clogged-main-sewer-line-backing-up-flooding.html /clogged-main-sewer-line-backing-up-flooding 301!
-/commercial-drain-service.html /commercial-drain-service 301!
 /contact.html /contact 301!
 /dishwasher-air-gap-leak.html /dishwasher-air-gap-leak 301!
-/drain-cleaning-abc.html /drain-cleaning-abc 301!
-/drain-cleaning-clogged-ground-drain.html /drain-cleaning-clogged-ground-drain 301!
-/drain-grate-removal.html /drain-grate-removal 301!
 /drain-line-leak.html /drain-line-leak 301!
 /drain-pipe-repair.html /drain-pipe-repair 301!
 /drain-snaking-cabling.html /drain-snaking-cabling 301!
@@ -17,13 +12,40 @@
 /hydro-jetting.html /hydro-jetting 301!
 /kitchen-sink-drain-clog.html /kitchen-sink-drain-clog 301!
 /locations.html /locations 301!
-/main-drain-clog.html /main-drain-clog 301!
-/mainline-blockage-clearing.html /mainline-blockage-clearing 301!
 /mainline-drain-cleaning.html /mainline-drain-cleaning 301!
-/pipe-blockage.html /pipe-blockage 301!
+/north-naples.html /north-naples 301!
+/old-naples.html /old-naples 301!
+/park-shore-the-moorings.html /park-shore-the-moorings 301!
+/pelican-bay.html /pelican-bay 301!
+/port-royal.html /port-royal 301!
 /privacy-policy.html /privacy-policy 301!
 /services.html /services 301!
 /sewer-cleaning.html /sewer-cleaning 301!
 /shower-tub-drain-clog.html /shower-tub-drain-clog 301!
-/slow-drain-clogged-bathroom-sink.html /slow-drain-clogged-bathroom-sink 301!
-/water-backing-up-under-tub-shower.html /water-backing-up-under-tub-shower 301!
+
+# Legacy and Draft 301 Redirects to Canonical Services
+/pipe-blockage /clogged-drain-unclog 301!
+/pipe-blockage.html /clogged-drain-unclog 301!
+/drain-cleaning-clogged-ground-drain /clogged-drain-unclog 301!
+/drain-cleaning-clogged-ground-drain.html /clogged-drain-unclog 301!
+/drain-cleaning-abc /locations 301!
+/drain-cleaning-abc.html /locations 301!
+/commercial-drain-service /services 301!
+/commercial-drain-service.html /services 301!
+/slow-drain-clogged-bathroom-sink /clogged-drain-unclog 301!
+/slow-drain-clogged-bathroom-sink.html /clogged-drain-unclog 301!
+/clogged-main-sewer-line-backing-up-flooding /mainline-drain-cleaning 301!
+/clogged-main-sewer-line-backing-up-flooding.html /mainline-drain-cleaning 301!
+/broken-drain-line-repair /drain-pipe-repair 301!
+/broken-drain-line-repair.html /drain-pipe-repair 301!
+/drain-grate-removal /clogged-drain-unclog 301!
+/drain-grate-removal.html /clogged-drain-unclog 301!
+/main-drain-clog /clogged-drain-unclog 301!
+/main-drain-clog.html /clogged-drain-unclog 301!
+/mainline-blockage-clearing /mainline-drain-cleaning 301!
+/mainline-blockage-clearing.html /mainline-drain-cleaning 301!
+/water-backing-up-under-tub-shower /shower-tub-drain-clog 301!
+/water-backing-up-under-tub-shower.html /shower-tub-drain-clog 301!
+
+# Block direct access to draft directory
+/_drafts/* /404 404

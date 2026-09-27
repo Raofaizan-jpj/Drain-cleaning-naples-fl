@@ -1,6 +1,5 @@
-# Clean URLs for Apache / LiteSpeed hosts (SiteGround, cPanel, Hostinger,
-# GoDaddy, Namecheap…). Netlify, Vercel and Cloudflare Pages ignore this file
-# and use netlify.toml / vercel.json instead. Safe to leave in place anywhere.
+# Clean URLs, Security & Performance for Apache / LiteSpeed hosts
+# (SiteGround, cPanel, Hostinger, GoDaddy, Namecheap...)
 
 Options -MultiViews
 ErrorDocument 404 /404.html
@@ -9,19 +8,51 @@ ErrorDocument 404 /404.html
   RewriteEngine On
   RewriteBase /
 
-  # /services/roof-repair -> services/roof-repair.html (internal, no redirect)
+  # 1. Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 2. Force non-www
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+  # 3. Block direct access to draft templates
+  RewriteRule ^_drafts/.*$ /404.html [L,R=404]
+
+  # 4. 301 Redirects for Legacy / Draft URLs
+  RewriteRule ^pipe-blockage/?$ /clogged-drain-unclog [R=301,L]
+  RewriteRule ^drain-cleaning-clogged-ground-drain/?$ /clogged-drain-unclog [R=301,L]
+  RewriteRule ^drain-cleaning-abc/?$ /locations [R=301,L]
+  RewriteRule ^commercial-drain-service/?$ /services [R=301,L]
+  RewriteRule ^slow-drain-clogged-bathroom-sink/?$ /clogged-drain-unclog [R=301,L]
+  RewriteRule ^clogged-main-sewer-line-backing-up-flooding/?$ /mainline-drain-cleaning [R=301,L]
+  RewriteRule ^broken-drain-line-repair/?$ /drain-pipe-repair [R=301,L]
+  RewriteRule ^drain-grate-removal/?$ /clogged-drain-unclog [R=301,L]
+  RewriteRule ^main-drain-clog/?$ /clogged-drain-unclog [R=301,L]
+  RewriteRule ^mainline-blockage-clearing/?$ /mainline-drain-cleaning [R=301,L]
+  RewriteRule ^water-backing-up-under-tub-shower/?$ /shower-tub-drain-clog [R=301,L]
+
+  # 5. Clean URLs: /services -> services.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}\.html -f
   RewriteRule ^(.+?)/?$ $1.html [L]
 
-  # Canonical: a direct .html hit 301s to the clean URL.
+  # 6. Canonical: a direct .html hit 301s to clean URL
   RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
   RewriteRule ^ / [R=301,L]
   RewriteCond %{THE_REQUEST} \s/+(.+?)/index\.html[\s?] [NC]
   RewriteRule ^ /%1/ [R=301,L]
   RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
   RewriteRule ^ /%1 [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfModule>
 
 <IfModule mod_deflate.c>

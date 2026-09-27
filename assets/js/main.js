@@ -1,4 +1,4 @@
-﻿/* THEME 10 — "Ironside" front-end behaviours. Sections are inlined at
+/* THEME 10 � "Ironside" front-end behaviours. Sections are inlined at
    generation time, so there is no client-side component loading.
 
    Lead capture on static city/state exports is NOT handled here: forms carry
@@ -72,7 +72,7 @@ function initOfferCodes() {
       const code = button.dataset.copyCode || "";
       try {
         await navigator.clipboard.writeText(code);
-        button.textContent = "Copied " + code + " ✓";
+        button.textContent = "Copied " + code + " ?";
       } catch (_e) {
         button.textContent = "Code: " + code;
       }
@@ -91,7 +91,7 @@ function initNewsletter() {
     event.preventDefault();
     const button = form.querySelector("button");
     if (button) {
-      button.textContent = "You're on the list ✓";
+      button.textContent = "You're on the list ?";
       button.disabled = true;
     }
   });
@@ -133,7 +133,7 @@ function initReveal() {
 
 /* Lead capture for NATIONWIDE / SUBDOMAIN pages (data-t8-form). Static
    city/state exports carry `data-rl-lead` and are wired by the shared
-   export-time injector — that injector does NOT run for the dynamic nationwide
+   export-time injector � that injector does NOT run for the dynamic nationwide
    renderer, so those pages ship this self-contained handler instead. Config,
    when present, arrives via `window.__RL_LEADS`; without it the form still
    shows the success state. */
@@ -218,13 +218,13 @@ function initLeadForms() {
             keepalive: true,
           }).catch(() => {});
         } catch (_e) {
-          /* ignore — still show success below */
+          /* ignore � still show success below */
         }
       }
       form.querySelector(".form-success")?.classList.add("visible");
       if (submit) {
         submit.disabled = true;
-        submit.innerHTML = "Request received ✓";
+        submit.innerHTML = "Request received ?";
       }
     });
   });
@@ -252,7 +252,7 @@ function initCanonical() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  initCanonical();
+  // Static canonical tags in HTML head are authoritative. Client-side canonical rewriting disabled for SEO.
   initNavigation();
   initOfferCodes();
   initNewsletter();

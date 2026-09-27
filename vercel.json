@@ -129,12 +129,47 @@
     },
     {
       "source": "/drain-cleaning-abc",
-      "destination": "/",
+      "destination": "/locations",
       "permanent": true
     },
     {
       "source": "/commercial-drain-service",
       "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/slow-drain-clogged-bathroom-sink",
+      "destination": "/clogged-drain-unclog",
+      "permanent": true
+    },
+    {
+      "source": "/clogged-main-sewer-line-backing-up-flooding",
+      "destination": "/mainline-drain-cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/broken-drain-line-repair",
+      "destination": "/drain-pipe-repair",
+      "permanent": true
+    },
+    {
+      "source": "/drain-grate-removal",
+      "destination": "/clogged-drain-unclog",
+      "permanent": true
+    },
+    {
+      "source": "/main-drain-clog",
+      "destination": "/clogged-drain-unclog",
+      "permanent": true
+    },
+    {
+      "source": "/mainline-blockage-clearing",
+      "destination": "/mainline-drain-cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/water-backing-up-under-tub-shower",
+      "destination": "/shower-tub-drain-clog",
       "permanent": true
     }
   ],
@@ -179,7 +214,7 @@
       ]
     },
     {
-      "source": "/(about|blog|contact|locations|privacy-policy|services|sewer-cleaning|clogged-drain-unclog|drain-snaking-cabling|hydro-jetting|kitchen-sink-drain-clog|drain-line-leak|north-naples|old-naples|pelican-bay|park-shore-the-moorings|port-royal)",
+      "source": "/(about|blog|contact|locations|privacy-policy|services|sewer-cleaning|clogged-drain-unclog|drain-snaking-cabling|hydro-jetting|kitchen-sink-drain-clog|drain-line-leak|drain-pipe-repair|shower-tub-drain-clog|dishwasher-air-gap-leak|french-drain-service|mainline-drain-cleaning|north-naples|old-naples|pelican-bay|park-shore-the-moorings|port-royal)",
       "headers": [
         {
           "key": "Cache-Control",
