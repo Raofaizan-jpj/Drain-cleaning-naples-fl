@@ -7,7 +7,7 @@
   <meta name="google-site-verification" content="2oGXqpVKQmzwgQJ-P1uxkg-McOBxoIULYEuEk59o2ks" />
   <title>Drain Cleaning Naples FL | Drain and Sewer Experts</title>
   <meta name="description"
-    content="Trusted Drain Cleaning in Naples, FL — Full clog, sewer line &amp; hydro jetting service for a home that drains clear year-round. Call +12396880557 today.">
+    content="Drain cleaning in Naples, FL for homes and businesses: snaking, hydro jetting, sewer line work. See the cause on camera and get the price first. Call now.">
   <meta name="author" content="Drain Cleaning Advisor">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://draincleaningnaplesflorida.com/">
@@ -316,7 +316,7 @@
     type="image/svg+xml" />
   <meta name="theme-color" content="#0B3C5D" />
   <!-- LCP preload: must be before stylesheet -->
-  <link rel="preload" as="image" href="assets/images/gen/hero-drain-cleaning-naples.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/images/gen/hero-naples-drain-equipment-1.webp" fetchpriority="high" />
   <link rel="preload" as="image" href="assets/images/logo.png?v=5" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -528,10 +528,15 @@
     <div id="hero-container">
       <section class="hero">
         <div class="hero-visual" data-media-slot="homepage-hero">
-          <img src="assets/images/gen/hero-drain-cleaning-naples.webp"
-            alt="Professional Drain Cleaning Naples FL Technician Clearing Drain" fetchpriority="high" loading="eager"
-            decoding="async" width="1024" height="510" srcset="assets/images/gen/hero-drain-cleaning-naples.webp 1024w"
-            sizes="100vw" />
+          <img class="hero-slide active" src="assets/images/gen/hero-naples-drain-equipment-1.webp"
+            alt="Professional drain cleaning and sewer line equipment setup in Naples FL" fetchpriority="high" loading="eager"
+            decoding="async" width="1024" height="570" />
+          <img class="hero-slide" src="assets/images/gen/hero-naples-drain-clearing-2.webp"
+            alt="Technician unclogging drain with hydro jetting in Naples FL" loading="lazy"
+            decoding="async" width="1024" height="581" />
+          <img class="hero-slide" src="assets/images/gen/hero-naples-drain-camera-3.webp"
+            alt="Sewer camera pipe inspection technician in Naples FL" loading="lazy"
+            decoding="async" width="1024" height="595" />
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="shell hero-grid">
@@ -1466,6 +1471,18 @@
           observer.observe(el);
         });
       }
+    })();
+  </script>
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('.hero-visual .hero-slide');
+      if (!slides || slides.length < 2) return;
+      var currentIndex = 0;
+      setInterval(function () {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
+      }, 3000);
     })();
   </script>
 </body>
