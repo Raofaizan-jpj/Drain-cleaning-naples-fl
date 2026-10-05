@@ -317,6 +317,8 @@
   <meta name="theme-color" content="#0B3C5D" />
   <!-- LCP preload: must be before stylesheet -->
   <link rel="preload" as="image" href="assets/images/gen/hero-naples-drain-equipment-1.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/images/gen/hero-naples-drain-clearing-2.webp" />
+  <link rel="preload" as="image" href="assets/images/gen/hero-naples-drain-camera-3.webp" />
   <link rel="preload" as="image" href="assets/images/logo.png?v=5" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -532,10 +534,10 @@
             alt="Professional drain cleaning and sewer line equipment setup in Naples FL" fetchpriority="high" loading="eager"
             decoding="async" width="1024" height="570" />
           <img class="hero-slide" src="assets/images/gen/hero-naples-drain-clearing-2.webp"
-            alt="Technician unclogging drain with hydro jetting in Naples FL" loading="lazy"
+            alt="Technician unclogging drain with hydro jetting in Naples FL" loading="eager"
             decoding="async" width="1024" height="581" />
           <img class="hero-slide" src="assets/images/gen/hero-naples-drain-camera-3.webp"
-            alt="Sewer camera pipe inspection technician in Naples FL" loading="lazy"
+            alt="Sewer camera pipe inspection technician in Naples FL" loading="eager"
             decoding="async" width="1024" height="595" />
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
@@ -759,10 +761,10 @@
             </div>
           </div>
           <div class="why-visual" data-media-slot="why-choose-us" data-sal="slide-left" data-sal-duration="600">
-            <img src="assets/images/gen/why-choose-us-hydro-jetting-drain-clearing-naples.webp"
-              alt="Professional plumbing technician operating commercial hydro jetter drain clearing equipment in Naples FL"
-              loading="lazy" width="896" height="1200"
-              srcset="assets/images/gen/why-choose-us-hydro-jetting-drain-clearing-naples.webp 896w"
+            <img src="assets/images/gen/why-choose-us-drain-cleaning-technician-naples.jpg"
+              alt="Professional plumbing technician operating drain snaking cable machine in Naples FL"
+              loading="lazy" width="800" height="617"
+              srcset="assets/images/gen/why-choose-us-drain-cleaning-technician-naples.jpg 800w"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 860px" />
           </div>
         </div>
@@ -1295,7 +1297,9 @@
 
     @media (max-width: 900px) {
       body.home-page .why-visual {
-        min-height: 380px;
+        min-height: 280px;
+        height: auto;
+        aspect-ratio: 4 / 3;
         margin-top: 24px;
       }
     }
@@ -1392,6 +1396,122 @@
         font-size: 1.35rem;
       }
     }
+
+    /* 9. Mobile Responsive Enhancements (Home Page) */
+    @media (max-width: 640px) {
+      body.home-page .hero {
+        padding: 40px 16px 36px;
+        min-height: auto;
+      }
+
+      body.home-page .hero-copy h1 {
+        font-size: clamp(26px, 7.8vw, 34px);
+        line-height: 1.18;
+        margin-bottom: 14px;
+      }
+
+      body.home-page .hero-copy > p {
+        font-size: 15px;
+        line-height: 1.55;
+        margin-bottom: 24px;
+      }
+
+      body.home-page .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 16px;
+        gap: 10px;
+      }
+
+      body.home-page .hero-actions .button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+
+      body.home-page .why-visual {
+        height: auto;
+        min-height: 240px;
+        max-height: 380px;
+        aspect-ratio: 4 / 3;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      body.home-page .why-visual > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      body.home-page .reason-list article {
+        min-height: auto;
+        padding: 18px 16px;
+      }
+
+      body.home-page .reason-list b {
+        margin-bottom: 12px;
+      }
+
+      body.home-page .services-view-all {
+        margin: 28px 0 16px !important;
+      }
+
+      body.home-page .service-more {
+        gap: 14px;
+      }
+
+      body.home-page .map-card,
+      body.home-page .map-card iframe {
+        height: 320px;
+        min-height: 320px;
+      }
+
+      body.home-page .fast-response-band {
+        padding: 34px 0;
+      }
+
+      body.home-page .fast-response-grid {
+        gap: 16px;
+      }
+
+      body.home-page .fast-response-icon {
+        width: 60px;
+        height: 60px;
+      }
+
+      body.home-page .fast-response-icon svg {
+        width: 32px;
+        height: 32px;
+      }
+
+      body.home-page .fast-response-action {
+        width: 100%;
+      }
+
+      body.home-page .fast-response-action .button {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+      }
+
+      body.home-page .cta-copy .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin-top: 18px;
+        gap: 10px;
+      }
+
+      body.home-page .cta-copy .hero-actions .button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    }
   </style>
 
   <script id="home-animations-js">
@@ -1475,14 +1595,47 @@
   </script>
   <script>
     (function () {
-      var slides = document.querySelectorAll('.hero-visual .hero-slide');
-      if (!slides || slides.length < 2) return;
-      var currentIndex = 0;
-      setInterval(function () {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add('active');
-      }, 3000);
+      function initHeroSlider() {
+        var slides = document.querySelectorAll('.hero-visual .hero-slide');
+        if (!slides || slides.length < 2) return;
+        var currentIndex = 0;
+        var slideTimer = null;
+
+        function nextSlide() {
+          slides[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % slides.length;
+          slides[currentIndex].classList.add('active');
+        }
+
+        function startSlider() {
+          if (!slideTimer) {
+            slideTimer = setInterval(nextSlide, 3000);
+          }
+        }
+
+        function stopSlider() {
+          if (slideTimer) {
+            clearInterval(slideTimer);
+            slideTimer = null;
+          }
+        }
+
+        startSlider();
+
+        document.addEventListener('visibilitychange', function () {
+          if (document.hidden) {
+            stopSlider();
+          } else {
+            startSlider();
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initHeroSlider);
+      } else {
+        initHeroSlider();
+      }
     })();
   </script>
 </body>
