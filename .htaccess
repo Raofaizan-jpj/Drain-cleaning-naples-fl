@@ -31,6 +31,9 @@ ErrorDocument 404 /404.html
   RewriteRule ^main-drain-clog/?$ /clogged-drain-unclog [R=301,L]
   RewriteRule ^mainline-blockage-clearing/?$ /mainline-drain-cleaning [R=301,L]
   RewriteRule ^water-backing-up-under-tub-shower/?$ /shower-tub-drain-clog [R=301,L]
+  RewriteRule ^service-areas/naples-park/?$ /naples-park [R=301,L]
+  RewriteRule ^service-areas/east-naples/?$ /east-naples [R=301,L]
+  RewriteRule ^service-areas/pine-ridge/?$ /pine-ridge [R=301,L]
 
   # 5. Clean URLs: /services -> services.html
   RewriteCond %{REQUEST_FILENAME} !-f

@@ -22,6 +22,17 @@
 /services.html /services 301!
 /sewer-cleaning.html /sewer-cleaning 301!
 /shower-tub-drain-clog.html /shower-tub-drain-clog 301!
+/naples-park.html /naples-park 301!
+/east-naples.html /east-naples 301!
+/pine-ridge.html /pine-ridge 301!
+
+# Service Area Subfolder 301 Redirects to Canonical Clean URLs
+/service-areas/naples-park /naples-park 301!
+/service-areas/naples-park/ /naples-park 301!
+/service-areas/east-naples /east-naples 301!
+/service-areas/east-naples/ /east-naples 301!
+/service-areas/pine-ridge /pine-ridge 301!
+/service-areas/pine-ridge/ /pine-ridge 301!
 
 # Legacy and Draft 301 Redirects to Canonical Services
 /pipe-blockage /clogged-drain-unclog 301!

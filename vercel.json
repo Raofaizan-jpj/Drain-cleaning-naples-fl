@@ -118,6 +118,36 @@
       "permanent": true
     },
     {
+      "source": "/naples-park.html",
+      "destination": "/naples-park",
+      "permanent": true
+    },
+    {
+      "source": "/east-naples.html",
+      "destination": "/east-naples",
+      "permanent": true
+    },
+    {
+      "source": "/pine-ridge.html",
+      "destination": "/pine-ridge",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/naples-park",
+      "destination": "/naples-park",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/east-naples",
+      "destination": "/east-naples",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/pine-ridge",
+      "destination": "/pine-ridge",
+      "permanent": true
+    },
+    {
       "source": "/pipe-blockage",
       "destination": "/clogged-drain-unclog",
       "permanent": true
@@ -214,7 +244,7 @@
       ]
     },
     {
-      "source": "/(about|blog|contact|locations|privacy-policy|services|sewer-cleaning|clogged-drain-unclog|drain-snaking-cabling|hydro-jetting|kitchen-sink-drain-clog|drain-line-leak|drain-pipe-repair|shower-tub-drain-clog|dishwasher-air-gap-leak|french-drain-service|mainline-drain-cleaning|north-naples|old-naples|pelican-bay|park-shore-the-moorings|port-royal)",
+      "source": "/(about|blog|contact|locations|privacy-policy|services|sewer-cleaning|clogged-drain-unclog|drain-snaking-cabling|hydro-jetting|kitchen-sink-drain-clog|drain-line-leak|drain-pipe-repair|shower-tub-drain-clog|dishwasher-air-gap-leak|french-drain-service|mainline-drain-cleaning|north-naples|old-naples|pelican-bay|park-shore-the-moorings|port-royal|naples-park|east-naples|pine-ridge)",
       "headers": [
         {
           "key": "Cache-Control",
