@@ -201,9 +201,15 @@
       "source": "/water-backing-up-under-tub-shower",
       "destination": "/shower-tub-drain-clog",
       "permanent": true
+    },
+    {
+      "source": "/assets/images/gen/kitchen-sink-drain-clog-3f3133e0.webp",
+      "destination": "/assets/images/gen/kitchen-sink-drain-clog-naples-fl.webp",
+      "permanent": true
     }
   ],
   "headers": [
+
     {
       "source": "/(.*)",
       "headers": [
