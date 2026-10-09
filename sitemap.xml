@@ -26,8 +26,14 @@
     </url>
     <url>
         <loc>https://draincleaningnaplesflorida.com/blog</loc>
-        <lastmod>2026-09-25</lastmod>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://draincleaningnaplesflorida.com/blog/sewage-backup-naples</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
@@ -39,6 +45,12 @@
     <url>
         <loc>https://draincleaningnaplesflorida.com/privacy-policy</loc>
         <lastmod>2026-09-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://draincleaningnaplesflorida.com/terms-of-service</loc>
+        <lastmod>2026-10-09</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
