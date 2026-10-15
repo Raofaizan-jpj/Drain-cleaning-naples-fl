@@ -1,4 +1,4 @@
-/* THEME 10 — "Ironside" front-end behaviours. Sections are inlined at
+/* THEME 10 ï¿½ "Ironside" front-end behaviours. Sections are inlined at
    generation time, so there is no client-side component loading.
 
    Lead capture on static city/state exports is NOT handled here: forms carry
@@ -133,7 +133,7 @@ function initReveal() {
 
 /* Lead capture for NATIONWIDE / SUBDOMAIN pages (data-t8-form). Static
    city/state exports carry `data-rl-lead` and are wired by the shared
-   export-time injector — that injector does NOT run for the dynamic nationwide
+   export-time injector ï¿½ that injector does NOT run for the dynamic nationwide
    renderer, so those pages ship this self-contained handler instead. Config,
    when present, arrives via `window.__RL_LEADS`; without it the form still
    shows the success state. */
@@ -218,7 +218,7 @@ function initLeadForms() {
             keepalive: true,
           }).catch(() => {});
         } catch (_e) {
-          /* ignore — still show success below */
+          /* ignore ï¿½ still show success below */
         }
       }
       form.querySelector(".form-success")?.classList.add("visible");
@@ -251,8 +251,40 @@ function initCanonical() {
   } catch (_e) {}
 }
 
+function initLocalCleanUrls() {
+  const isLocal = window.location.hostname === "localhost" ||
+                  window.location.hostname === "127.0.0.1" ||
+                  window.location.protocol === "file:";
+  if (!isLocal) return;
+
+  document.addEventListener("click", function(e) {
+    const link = e.target.closest("a");
+    if (!link) return;
+    const href = link.getAttribute("href");
+    if (!href) return;
+    if (href.startsWith("http://") || href.startsWith("https://") || href.startsWith("tel:") || href.startsWith("mailto:") || href.startsWith("#")) {
+      return;
+    }
+    if (href.startsWith("/") && !href.includes(".")) {
+      e.preventDefault();
+      const clean = href.replace(/^\/+/, "").replace(/\/+$/, "");
+      if (window.location.protocol === "file:") {
+        const currentPath = window.location.pathname;
+        const isInSubfolder = currentPath.includes("/blog/") || currentPath.includes("\\blog\\");
+        const prefix = isInSubfolder ? "../" : "./";
+        const target = clean === "" ? prefix + "index.html" : prefix + clean + ".html";
+        window.location.href = target;
+      } else {
+        const target = clean === "" ? "/index.html" : "/" + clean + ".html";
+        window.location.href = target;
+      }
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // Static canonical tags in HTML head are authoritative. Client-side canonical rewriting disabled for SEO.
+  initLocalCleanUrls();
   initNavigation();
   initOfferCodes();
   initNewsletter();
