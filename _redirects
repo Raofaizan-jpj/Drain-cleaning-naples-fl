@@ -25,12 +25,15 @@
 /naples-park.html /naples-park 301
 /east-naples.html /east-naples 301
 /pine-ridge.html /pine-ridge 301
+/blog/drain-cleaning-cost-naples.html /blog/drain-cleaning-cost-naples 301
 
 # Clean URL Rewrites (Serve static HTML files without 404)
 /blog /blog.html 200
 /blog/ /blog.html 200
 /blog/sewage-backup-naples /blog/sewage-backup-naples.html 200
 /blog/sewage-backup-naples/ /blog/sewage-backup-naples.html 200
+/blog/drain-cleaning-cost-naples /blog/drain-cleaning-cost-naples.html 200
+/blog/drain-cleaning-cost-naples/ /blog/drain-cleaning-cost-naples.html 200
 /about /about.html 200
 /clogged-drain-unclog /clogged-drain-unclog.html 200
 /contact /contact.html 200
