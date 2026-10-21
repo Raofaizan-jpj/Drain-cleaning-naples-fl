@@ -35,6 +35,8 @@ ErrorDocument 404 /404.html
   RewriteRule ^service-areas/east-naples/?$ /east-naples [R=301,L]
   RewriteRule ^service-areas/pine-ridge/?$ /pine-ridge [R=301,L]
   RewriteRule ^assets/images/gen/kitchen-sink-drain-clog-3f3133e0\.webp$ /assets/images/gen/kitchen-sink-drain-clog-naples-fl.webp [R=301,L]
+  RewriteRule ^assets/images/gen/drain-cleaning-advisor-technician-at-work-7e42e64b\.webp$ /assets/images/gen/naples-drain-pros-technician-at-work.webp [R=301,L]
+  RewriteRule ^assets/images/gen/drain-cleaning-advisor-technician-on-site-136a63c9\.webp$ /assets/images/gen/naples-drain-pros-technician-on-site.webp [R=301,L]
 
 
   # 5. Clean URLs: /services -> services.html
