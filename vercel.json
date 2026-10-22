@@ -133,6 +133,21 @@
       "permanent": true
     },
     {
+      "source": "/blog/drain-cleaning-cost-naples.html",
+      "destination": "/blog/drain-cleaning-cost-naples",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sewage-backup-naples.html",
+      "destination": "/blog/sewage-backup-naples",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tree-roots-sewer-line-naples.html",
+      "destination": "/blog/tree-roots-sewer-line-naples",
+      "permanent": true
+    },
+    {
       "source": "/service-areas/naples-park",
       "destination": "/naples-park",
       "permanent": true
@@ -270,7 +285,7 @@
       ]
     },
     {
-      "source": "/_drafts/(.*)",
+      "source": "/(_drafts|src)/(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -285,7 +300,7 @@
   ],
   "rewrites": [
     {
-      "source": "/_drafts/(.*)",
+      "source": "/(_drafts|src)/(.*)",
       "destination": "/404"
     }
   ]
