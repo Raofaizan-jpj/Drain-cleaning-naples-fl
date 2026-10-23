@@ -2,6 +2,9 @@
 https://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.com/:splat 301!
 http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.com/:splat 301!
 
+# Cloudflare email protection redirect safety net
+/cdn-cgi/l/email-protection* /contact 301
+
 # Static HTML to Clean URL Canonical Redirects
 /index.html / 301!
 /about.html /about 301

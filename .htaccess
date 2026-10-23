@@ -21,6 +21,7 @@ ErrorDocument 404 /404.html
   RewriteRule ^(_drafts|src)/.*$ /404.html [L,R=404]
 
   # 4. 301 Redirects for Legacy / Draft URLs
+  RewriteRule ^cdn-cgi/l/email-protection.*$ /contact [R=301,L]
   RewriteRule ^pipe-blockage/?$ /clogged-drain-unclog [R=301,L]
   RewriteRule ^drain-cleaning-clogged-ground-drain/?$ /clogged-drain-unclog [R=301,L]
   RewriteRule ^drain-cleaning-abc/?$ /locations [R=301,L]
