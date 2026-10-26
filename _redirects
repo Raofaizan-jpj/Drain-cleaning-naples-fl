@@ -14,7 +14,9 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 /drain-line-leak.html /drain-line-leak 301
 /drain-pipe-repair.html /drain-pipe-repair 301
 /drain-snaking-cabling.html /drain-snaking-cabling 301
-/french-drain-service.html /french-drain-service 301
+/french-drain-service /french-drain-services 301!
+/french-drain-service.html /french-drain-services 301!
+/french-drain-services.html /french-drain-services 301!
 /hydro-jetting.html /hydro-jetting 301
 /kitchen-sink-drain-clog.html /kitchen-sink-drain-clog 301
 /locations.html /locations 301
@@ -52,7 +54,7 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 /drain-line-leak /drain-line-leak.html 200
 /drain-pipe-repair /drain-pipe-repair.html 200
 /drain-snaking-cabling /drain-snaking-cabling.html 200
-/french-drain-service /french-drain-service.html 200
+/french-drain-services /french-drain-services.html 200
 /hydro-jetting /hydro-jetting.html 200
 /kitchen-sink-drain-clog /kitchen-sink-drain-clog.html 200
 /locations /locations.html 200
