@@ -444,8 +444,17 @@
       --shadow: 0 18px 50px rgba(11, 60, 93, .1);
       --shadow-card: 0 10px 30px rgba(11, 60, 93, .08);
     }
-    *, *:before, *:after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       overflow-x: hidden;
@@ -456,13 +465,45 @@
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-    body.menu-open { overflow: hidden; }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    button, input, select, textarea { font: inherit; }
-    button, summary { cursor: pointer; }
-    h1, h2, h3, h4, p { margin-top: 0; }
-    h1, h2, h3, h4 {
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    summary {
+      cursor: pointer;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
       color: var(--navy);
       font-family: var(--heading);
       font-weight: 700;
@@ -470,9 +511,20 @@
       letter-spacing: -.025em;
       text-transform: uppercase;
     }
-    h1 { font-size: clamp(2.9rem, 5.6vw, 5rem); }
-    h2 { margin-bottom: 24px; font-size: clamp(2.1rem, 3.9vw, 3.7rem); }
-    p { margin-bottom: 18px; }
+
+    h1 {
+      font-size: clamp(2.9rem, 5.6vw, 5rem);
+    }
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: clamp(2.1rem, 3.9vw, 3.7rem);
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
     .skip-link {
       position: fixed;
       z-index: 999;
@@ -484,11 +536,16 @@
       font-weight: 800;
       transform: translateY(-150%);
     }
-    .skip-link:focus { transform: translateY(0); }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
     .shell {
       width: min(1180px, calc(100% - 48px));
       margin-inline: auto;
     }
+
     .button {
       display: inline-flex;
       min-height: 56px;
@@ -510,12 +567,14 @@
       text-decoration: none;
       transition: all .25s cubic-bezier(.22, 1, .36, 1);
     }
+
     .button:hover {
       background: var(--color-cta-hover);
       color: #fff;
       box-shadow: 0 10px 28px #ff6b006b;
       transform: translateY(-3px);
     }
+
     .button-outline {
       border: 2px solid rgba(255, 255, 255, .85);
       background: transparent;
@@ -523,6 +582,7 @@
       box-shadow: none;
       transition: all .25s cubic-bezier(.22, 1, .36, 1);
     }
+
     .button-outline:hover {
       border-color: #fff;
       background: #fff;
@@ -530,17 +590,20 @@
       box-shadow: 0 8px 24px #0003;
       transform: translateY(-3px);
     }
+
     .button-small {
       min-height: 48px;
       padding-inline: 22px;
       font-size: 1rem;
       font-weight: 800;
     }
+
     .site-header {
       position: relative;
       z-index: 100;
       background: var(--paper);
     }
+
     .utility-bar {
       min-height: 35px;
       background: var(--color-primary);
@@ -550,6 +613,7 @@
       letter-spacing: .07em;
       text-transform: uppercase;
     }
+
     .utility-inner {
       display: flex;
       min-height: 35px;
@@ -557,18 +621,24 @@
       justify-content: space-between;
       gap: 25px;
     }
-    .utility-inner p { margin: 0; }
+
+    .utility-inner p {
+      margin: 0;
+    }
+
     .utility-inner div {
       display: flex;
       align-items: center;
       gap: 20px;
     }
+
     .utility-socials {
       display: inline-flex;
       align-items: center;
       gap: 7px;
       margin-left: 5px;
     }
+
     .utility-socials a {
       display: inline-flex;
       align-items: center;
@@ -580,11 +650,13 @@
       color: var(--color-footer-text);
       text-decoration: none;
     }
+
     .utility-socials a svg {
       display: block;
       width: 12px;
       height: 12px;
     }
+
     .live-dot {
       display: inline-block;
       width: 7px;
@@ -594,6 +666,7 @@
       background: var(--color-success);
       box-shadow: 0 0 0 4px #12b76a33;
     }
+
     .main-nav {
       display: grid;
       min-height: 82px;
@@ -601,6 +674,7 @@
       align-items: center;
       gap: 34px;
     }
+
     .brand {
       display: inline-flex;
       align-items: center;
@@ -613,6 +687,7 @@
       line-height: .78;
       text-transform: uppercase;
     }
+
     .brand-logo {
       height: 68px;
       width: auto;
@@ -620,12 +695,14 @@
       display: block;
       object-fit: contain;
     }
+
     .nav-links {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 28px;
     }
+
     .nav-links a {
       position: relative;
       padding: 31px 0 28px;
@@ -635,11 +712,13 @@
       letter-spacing: .05em;
       text-transform: uppercase;
     }
+
     .nav-dropdown {
       position: relative;
       display: inline-flex;
       align-items: center;
     }
+
     .nav-dropdown-btn {
       position: relative;
       display: inline-flex;
@@ -656,6 +735,7 @@
       text-transform: uppercase;
       cursor: pointer;
     }
+
     .nav-dropdown-menu {
       position: absolute;
       top: 100%;
@@ -671,6 +751,7 @@
       pointer-events: none;
       z-index: 500;
     }
+
     .nav-dropdown:hover .nav-dropdown-menu,
     .nav-dropdown.active .nav-dropdown-menu {
       opacity: 1;
@@ -678,11 +759,13 @@
       pointer-events: auto;
       transform: translate(-50%) translateY(0);
     }
+
     .dropdown-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 6px 14px;
     }
+
     .dropdown-grid a {
       display: flex !important;
       align-items: center;
@@ -693,10 +776,12 @@
       font-weight: 700 !important;
       border-radius: 4px;
     }
+
     .dropdown-grid-locations {
       grid-template-columns: 1fr;
       gap: 3px;
     }
+
     .dropdown-grid a.dropdown-view-all {
       margin-top: 6px;
       padding-top: 10px !important;
@@ -704,11 +789,13 @@
       color: var(--color-cta) !important;
       font-weight: 800 !important;
     }
+
     .nav-actions {
       display: flex;
       align-items: center;
       gap: 16px;
     }
+
     .nav-actions .button {
       min-height: 52px;
       padding: 0 28px;
@@ -719,10 +806,12 @@
       background: #B84500;
       color: #ffffff;
     }
+
     .nav-actions .button:hover {
       background: #9E3B00;
       color: #ffffff;
     }
+
     .nav-toggle {
       display: none;
       width: 44px;
@@ -731,12 +820,14 @@
       background: var(--navy);
       padding: 12px;
     }
+
     .nav-toggle span {
       display: block;
       height: 2px;
       margin-block: 5px;
       background: var(--paper);
     }
+
     /* Hero Critical CSS - Immediate Paint (No Opacity:0, No Transition, No JS Needed) */
     .hero {
       position: relative;
@@ -752,6 +843,7 @@
       background: #0b1e33;
       color: #fff;
     }
+
     .hero-visual {
       position: absolute;
       inset: 0;
@@ -761,6 +853,7 @@
       pointer-events: none;
       overflow: hidden;
     }
+
     .hero-visual img,
     .hero-visual .hero-slide {
       position: absolute;
@@ -774,6 +867,7 @@
       will-change: opacity;
       z-index: 1;
     }
+
     .hero-visual .hero-slide:first-child,
     .hero-visual img:first-child {
       opacity: 1 !important;
@@ -781,17 +875,21 @@
       animation: none !important;
       z-index: 2;
     }
+
     .hero-visual.slider-active .hero-slide:first-child {
       transition: opacity 1s cubic-bezier(.4, 0, .2, 1) !important;
     }
+
     .hero-visual.slider-active .hero-slide:first-child:not(.active) {
       opacity: 0 !important;
     }
+
     .hero-visual img.active,
     .hero-visual .hero-slide.active {
       opacity: 1;
       z-index: 2;
     }
+
     .hero-overlay {
       position: absolute;
       inset: 0;
@@ -799,6 +897,7 @@
       z-index: 2;
       pointer-events: none;
     }
+
     .hero-grid {
       position: relative;
       z-index: 3;
@@ -812,6 +911,7 @@
       justify-content: center;
       text-align: center;
     }
+
     .hero-copy {
       position: relative;
       z-index: 4;
@@ -823,6 +923,7 @@
       justify-content: center;
       text-align: center;
     }
+
     .hero-copy h1 {
       width: 100%;
       max-width: 1080px;
@@ -836,11 +937,13 @@
       text-transform: none;
       text-shadow: 0 2px 12px rgba(0, 0, 0, .45);
     }
+
     .hero-copy h1 span {
       color: #fff;
       display: inline;
     }
-    .hero-copy > p {
+
+    .hero-copy>p {
       width: 100%;
       max-width: 780px;
       margin: 0 auto 34px;
@@ -851,6 +954,7 @@
       line-height: 1.62;
       text-shadow: 0 1px 8px rgba(0, 0, 0, .45);
     }
+
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
@@ -859,6 +963,7 @@
       gap: 14px;
       margin-bottom: 24px;
     }
+
     .hero-actions .button.hero-btn-primary,
     .hero-actions .button:not(.hero-btn-secondary):not(.button-outline) {
       min-height: auto;
@@ -876,6 +981,7 @@
       box-shadow: 0 4px 15px #0000002e;
       transition: all .2s ease-in-out;
     }
+
     .hero-actions .button.hero-btn-secondary,
     .hero-actions .button-outline {
       min-height: auto;
@@ -895,6 +1001,7 @@
       box-shadow: 0 4px 15px #0000001f;
       transition: all .2s ease-in-out;
     }
+
     .hero-points {
       display: flex;
       flex-wrap: wrap;
@@ -909,6 +1016,7 @@
       font-size: .82rem;
       font-weight: 500;
     }
+
     .hero-points li {
       display: inline-flex;
       align-items: center;
@@ -919,18 +1027,37 @@
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, .18);
     }
+
     .hero-points li:before {
       margin-right: 6px;
       color: #38bdf8;
       content: "\2713";
       font-weight: 700;
     }
+
     @media (max-width: 850px) {
-      .shell { width: min(100% - 36px, 700px); }
-      .utility-inner div, .nav-actions { display: none; }
-      .utility-inner { justify-content: center; }
-      .main-nav { min-height: 72px; grid-template-columns: 1fr auto; }
-      .nav-toggle { display: block; }
+      .shell {
+        width: min(100% - 36px, 700px);
+      }
+
+      .utility-inner div,
+      .nav-actions {
+        display: none;
+      }
+
+      .utility-inner {
+        justify-content: center;
+      }
+
+      .main-nav {
+        min-height: 72px;
+        grid-template-columns: 1fr auto;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
       .nav-links {
         position: absolute;
         top: 100%;
@@ -945,9 +1072,20 @@
         background: var(--paper);
         box-shadow: 0 25px 45px #0b3c5d2b;
       }
-      .nav-links.open { display: flex; }
-      .nav-links a { padding: 14px 0; border-bottom: 1px solid var(--line); }
-      .nav-links a:after { display: none; }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-links a:after {
+        display: none;
+      }
+
       .hero {
         width: 100%;
         min-height: 100dvh;
@@ -955,24 +1093,65 @@
         padding: 60px 20px 40px;
         background: #0b1e33;
       }
-      .hero-grid { min-height: auto; padding: 24px 0; gap: 0; }
-      .hero-visual { width: 100%; opacity: 1; }
-      .hero-copy { max-width: 100%; }
-      .hero-copy h1 { font-size: clamp(30px, 8vw, 42px); line-height: 1.15; margin-bottom: 18px; }
-      .hero-copy > p { font-size: 17px; line-height: 1.55; margin-bottom: 28px; }
+
+      .hero-grid {
+        min-height: auto;
+        padding: 24px 0;
+        gap: 0;
+      }
+
+      .hero-visual {
+        width: 100%;
+        opacity: 1;
+      }
+
+      .hero-copy {
+        max-width: 100%;
+      }
+
+      .hero-copy h1 {
+        font-size: clamp(30px, 8vw, 42px);
+        line-height: 1.15;
+        margin-bottom: 18px;
+      }
+
+      .hero-copy>p {
+        font-size: 17px;
+        line-height: 1.55;
+        margin-bottom: 28px;
+      }
     }
+
     @media (max-width: 768px) {
-      .brand-logo { height: 52px; max-width: 220px; }
+      .brand-logo {
+        height: 52px;
+        max-width: 220px;
+      }
     }
+
     @media (max-width: 580px) {
-      .shell { width: min(100% - 26px, 520px); }
-      body { font-size: 15px; }
-      h1 { font-size: clamp(2.4rem, 10.5vw, 3.4rem); }
-      .hero-grid { min-height: auto; padding-top: 40px; }
+      .shell {
+        width: min(100% - 26px, 520px);
+      }
+
+      body {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 10.5vw, 3.4rem);
+      }
+
+      .hero-grid {
+        min-height: auto;
+        padding-top: 40px;
+      }
     }
   </style>
   <link rel="preload" href="assets/global.css?v=4" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/global.css?v=4"></noscript>
+  <noscript>
+    <link rel="stylesheet" href="assets/global.css?v=4">
+  </noscript>
 
   <!--rl-leads-->
   <script
@@ -1077,9 +1256,9 @@
         </div>
       </div>
       <div class="shell main-nav">
-        <a class="brand" href="/" aria-label="Drain Cleaning Naples FL - Naples Drain Pros"><img src="assets/images/logo.webp?v=7"
-            alt="Naples Drain Pros" width="281" height="91" class="brand-logo" fetchpriority="high" loading="eager"
-            decoding="async" /></a>
+        <a class="brand" href="/" aria-label="Drain Cleaning Naples FL - Naples Drain Pros"><img
+            src="assets/images/logo.webp?v=7" alt="Naples Drain Pros" width="281" height="91" class="brand-logo"
+            fetchpriority="high" loading="eager" decoding="async" /></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
           <span></span><span></span><span></span><b class="sr-only">Toggle menu</b>
         </button>
@@ -1136,7 +1315,8 @@
           <a href="/contact">Contact</a>
         </nav>
         <div class="nav-actions">
-          <a class="button button-small" href="tel:+12396880557" style="background: #B84500; color: #ffffff;">+1 (239) 688 0557</a>
+          <a class="button button-small" href="tel:+12396880557" style="background: #B84500; color: #ffffff;">+1 (239)
+            688 0557</a>
         </div>
       </div>
     </header>
@@ -1147,8 +1327,8 @@
       <section class="hero">
         <div class="hero-visual" data-media-slot="homepage-hero">
           <img class="hero-slide active" src="assets/images/gen/hero-naples-drain-equipment-1.webp"
-            alt="Sewer line equipment set up outside a property" fetchpriority="high" loading="eager"
-            width="1024" height="570" />
+            alt="Sewer line equipment set up outside a property" fetchpriority="high" loading="eager" width="1024"
+            height="570" />
           <img class="hero-slide" src="assets/images/gen/hero-naples-drain-clearing-2.webp?v=2"
             alt="Technician running a high pressure hose into a drain" loading="lazy" decoding="async" width="1024"
             height="581" />
@@ -1235,7 +1415,8 @@
             <h2>How Do You Clear a Drain in Naples?</h2>
             <p class="lede">We find where the water stops, look inside the pipe, and match the tool to the cause. A
               snake handles soft clogs. High pressure water washes grease and scale off the pipe wall. Roots or a broken
-              joint need sewer line work. Our drain clearing services cover sinks, tubs, showers, floor drains, and the main sewer line.</p>
+              joint need sewer line work. Our drain clearing services cover sinks, tubs, showers, floor drains, and the
+              main sewer line.</p>
             <p>In Naples, roots, grease, and storm sand are common causes. If a snake does the job, we use a snake. If
               the line needs high pressure water or a repair, we explain why and show you what we found.</p>
 
@@ -1373,7 +1554,8 @@
             </a>
           </div>
           <div class="services-view-all" style="text-align: center; margin: 40px 0 24px;">
-            <a class="button" href="/services" style="background: #B84500; color: #ffffff;">View All Services <span>&rarr;</span></a>
+            <a class="button" href="/services" style="background: #B84500; color: #ffffff;">View All Services
+              <span>&rarr;</span></a>
           </div>
           <div class="service-more" style="border-radius: 8px; flex-wrap: wrap; gap: 16px;">
             <a class="button button-small" href="tel:+12396880557"
@@ -1427,6 +1609,7 @@
             <p>You tell us the problem, and we book a time and tell you who is coming. We check the drain and find the
               cause. You hear the price and approve it, then we clear or repair the line, run water to test it, and
               clean up.</p>
+            clean up. This is how we book Naples drain cleaning visits.</p>
           </div>
           <div class="route-grid">
             <article><b>01</b>
@@ -1488,7 +1671,9 @@
             <article class="compare-card">
               <div class="compare-icon">&#8962;</div>
               <h3>Residential Service</h3>
-              <p>We provide reliable residential drain cleaning services for houses, condos, rentals, and HOA homes in Naples. We explain what we found so you can choose
+              <p>We provide reliable residential drain cleaning services for houses, condos, rentals, and HOA homes in
+                Naples. We explain what we found so you can choose
+              <p>We serve houses, condos, rentals, and HOA homes in Naples. We explain what we found so you can choose
                 the best step for your home.</p>
               <ul class="check-list">
                 <li>We call before we arrive</li>
@@ -1547,6 +1732,8 @@
           <div class="area-copy">
             <h2>Do You Serve My Neighborhood in Naples?</h2>
             <p>We serve homes, condos, and businesses from Old Naples to Lely Resort. Find your area below. If your
+            <p>Drain cleaning Naples FL for homes, condos, and businesses, from Old Naples to Lely Resort. Find your
+              area below. If your
               street is not listed, call and give us your address, and we will tell you if we can come.</p>
             <ul class="city-list">
               <li><a href="/old-naples"><strong>Old Naples:</strong></a> Older homes and busy kitchens near Fifth Avenue
@@ -1569,8 +1756,7 @@
             <a class="button button-navy" href="#contact">Check Service Availability <span>&#8594;</span></a>
           </div>
           <div class="map-card" data-media-slot="service-area-map">
-            <iframe
-              title="Naples Drain Pros — Service Areas in Naples FL"
+            <iframe title="Naples Drain Pros — Service Areas in Naples FL"
               src="https://maps.google.com/maps?q=3440+Westview+Dr+%239,+Naples,+FL+34104&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -1730,7 +1916,8 @@
             </details>
             <details>
               <summary>Why call Naples Drain Pros?</summary>
-              <p>We look inside the pipe first, so you see the cause before you spend money on a fix. We pick the tool that fits the blockage, go over what we found, and confirm the price before we start.</p>
+              <p>We look inside the pipe first, so you see the cause before you spend money on a fix. We pick the tool
+                that fits the blockage, go over what we found, and confirm the price before we start.</p>
             </details>
             <details>
               <summary>Do you offer maintenance visits?</summary>
@@ -1797,11 +1984,13 @@
             </details>
             <details>
               <summary>How do I choose the best drain cleaning service in Naples?</summary>
-              <p>Pick a company that looks inside the pipe first, explains what it found, and gives you a price before work starts. Ask who is coming and when. If a company will not show you the problem, keep looking.</p>
+              <p>Pick a company that looks inside the pipe first, explains what it found, and gives you a price before
+                work starts. Ask who is coming and when. If a company will not show you the problem, keep looking.</p>
             </details>
             <details>
               <summary>Is there a drain clearing service near me in Naples?</summary>
-              <p>We serve homes and businesses from Old Naples to Lely Resort. Call and give us your street, and we will tell you if we can come and when.</p>
+              <p>We serve homes and businesses from Old Naples to Lely Resort. Call and give us your street, and we will
+                tell you if we can come and when.</p>
             </details>
           </div>
         </div>
@@ -1838,7 +2027,8 @@
                     0557</a></strong><span>Dispatch
                   and scheduling line</span></article>
               <article><strong><!--email_off--><a href="mailto:info@draincleaningnaplesflorida.com"
-                    style="color:inherit;">info@draincleaningnaplesflorida.com</a><!--/email_off--></strong><span>Photos, estimates,
+                    style="color:inherit;">info@draincleaningnaplesflorida.com</a><!--/email_off--></strong><span>Photos,
+                  estimates,
                   and
                   appointment follow up</span></article>
               <article><strong>3440 Westview Dr #9, Naples, FL 34104</strong><span>Dispatch office. Technicians serve
@@ -1871,9 +2061,9 @@
       <div class="shell">
         <div class="footer-grid">
           <div class="footer-brand">
-            <a class="brand" href="/" aria-label="Drain Cleaning Naples FL - Naples Drain Pros"><img src="assets/images/logo-white.webp?v=6"
-                alt="Naples Drain Pros" width="240" height="66" class="brand-logo" loading="lazy"
-                decoding="async" /></a>
+            <a class="brand" href="/" aria-label="Drain Cleaning Naples FL - Naples Drain Pros"><img
+                src="assets/images/logo-white.webp?v=6" alt="Naples Drain Pros" width="240" height="66"
+                class="brand-logo" loading="lazy" decoding="async" /></a>
             <p>Drain and sewer work for homes, rentals, and businesses in Southwest Florida.</p>
             <p>
             <address style="font-style:normal;margin-bottom:6px;">3440 Westview Dr #9, Naples, FL 34104
@@ -1936,8 +2126,9 @@
   </div>
 
   <div id="sticky-call-button-container">
-    <a class="sticky-call" href="tel:+12396880557" aria-label="Call us +12396880557" style="background: #B84500; color: #ffffff;"><span><svg viewBox="0 0 24 24"
-          width="17" height="17" fill="currentColor">
+    <a class="sticky-call" href="tel:+12396880557" aria-label="Call us +12396880557"
+      style="background: #B84500; color: #ffffff;"><span><svg viewBox="0 0 24 24" width="17" height="17"
+          fill="currentColor">
           <path
             d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z" />
         </svg></span> Call dispatch</a>
@@ -2324,46 +2515,57 @@
       background: #B84500;
       color: #ffffff;
     }
+
     body.home-page .services-view-all .button:hover {
       background: #9E3B00;
       color: #ffffff;
     }
+
     body.home-page .service-more a.button {
       background: #B84500 !important;
       color: #ffffff !important;
     }
+
     body.home-page .service-more a.button:hover {
       background: #9E3B00 !important;
       color: #ffffff !important;
     }
+
     body.home-page .newsletter button {
       background: #B84500;
       color: #ffffff;
     }
+
     body.home-page .newsletter button:hover {
       background: #9E3B00;
       color: #ffffff;
     }
+
     body.home-page .sticky-call {
       background: #B84500;
       color: #ffffff;
     }
+
     body.home-page .sticky-call:hover {
       background: #9E3B00;
       color: #ffffff;
     }
+
     body.home-page .nav-actions .button {
       background: #B84500;
       color: #ffffff;
     }
+
     body.home-page .nav-actions .button:hover {
       background: #9E3B00;
       color: #ffffff;
     }
+
     body.home-page .fast-response-action .button {
       background: #B84500;
       color: #ffffff;
     }
+
     body.home-page .fast-response-action .button:hover {
       background: #9E3B00;
       color: #ffffff;
