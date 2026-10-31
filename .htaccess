@@ -25,7 +25,7 @@ ErrorDocument 404 /404.html
   RewriteRule ^pipe-blockage/?$ /clogged-drain-unclog [R=301,L]
   RewriteRule ^drain-cleaning-clogged-ground-drain/?$ /clogged-drain-unclog [R=301,L]
   RewriteRule ^drain-cleaning-abc/?$ /locations [R=301,L]
-  RewriteRule ^commercial-drain-service/?$ /services [R=301,L]
+  RewriteRule ^commercial-drain-service/?$ /commercial-drain-cleaning [R=301,L]
   RewriteRule ^slow-drain-clogged-bathroom-sink/?$ /clogged-drain-unclog [R=301,L]
   RewriteRule ^clogged-main-sewer-line-backing-up-flooding/?$ /mainline-drain-cleaning [R=301,L]
   RewriteRule ^broken-drain-line-repair/?$ /drain-pipe-repair [R=301,L]

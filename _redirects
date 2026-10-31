@@ -8,6 +8,7 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 # Static HTML to Clean URL Canonical Redirects
 /index.html / 301!
 /about.html /about 301
+/blog.html /blog 301
 /clogged-drain-unclog.html /clogged-drain-unclog 301
 /contact.html /contact 301
 /dishwasher-air-gap-leak.html /dishwasher-air-gap-leak 301
@@ -34,6 +35,21 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 /naples-park.html /naples-park 301
 /east-naples.html /east-naples 301
 /pine-ridge.html /pine-ridge 301
+/emergency-drain-cleaning.html /emergency-drain-cleaning 301
+/sewer-camera-inspection.html /sewer-camera-inspection 301
+/commercial-drain-cleaning.html /commercial-drain-cleaning 301
+/drain-cleaning-cost-naples.html /drain-cleaning-cost-naples 301
+/park-shore.html /park-shore 301
+/the-moorings.html /the-moorings 301
+/lely-resort.html /lely-resort 301
+/golden-gate.html /golden-gate 301
+/golden-gate-estates.html /golden-gate-estates 301
+/marco-island.html /marco-island 301
+/coquina-sands.html /coquina-sands 301
+/aqualane-shores.html /aqualane-shores 301
+/vineyards.html /vineyards 301
+/naples-manor.html /naples-manor 301
+/berkshire-lakes.html /berkshire-lakes 301
 /blog/drain-cleaning-cost-naples.html /blog/drain-cleaning-cost-naples 301
 /blog/sewage-backup-naples.html /blog/sewage-backup-naples 301
 /blog/tree-roots-sewer-line-naples.html /blog/tree-roots-sewer-line-naples 301
@@ -72,6 +88,21 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 /naples-park /naples-park.html 200
 /east-naples /east-naples.html 200
 /pine-ridge /pine-ridge.html 200
+/emergency-drain-cleaning /emergency-drain-cleaning.html 200
+/sewer-camera-inspection /sewer-camera-inspection.html 200
+/commercial-drain-cleaning /commercial-drain-cleaning.html 200
+/drain-cleaning-cost-naples /drain-cleaning-cost-naples.html 200
+/park-shore /park-shore.html 200
+/the-moorings /the-moorings.html 200
+/lely-resort /lely-resort.html 200
+/golden-gate /golden-gate.html 200
+/golden-gate-estates /golden-gate-estates.html 200
+/marco-island /marco-island.html 200
+/coquina-sands /coquina-sands.html 200
+/aqualane-shores /aqualane-shores.html 200
+/vineyards /vineyards.html 200
+/naples-manor /naples-manor.html 200
+/berkshire-lakes /berkshire-lakes.html 200
 
 # Service Area Subfolder 301 Redirects to Canonical Clean URLs
 /service-areas/naples-park /naples-park 301
@@ -88,8 +119,8 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 /drain-cleaning-clogged-ground-drain.html /clogged-drain-unclog 301
 /drain-cleaning-abc /locations 301
 /drain-cleaning-abc.html /locations 301
-/commercial-drain-service /services 301
-/commercial-drain-service.html /services 301
+/commercial-drain-service /commercial-drain-cleaning 301
+/commercial-drain-service /commercial-drain-cleaning 301
 /slow-drain-clogged-bathroom-sink /clogged-drain-unclog 301
 /slow-drain-clogged-bathroom-sink.html /clogged-drain-unclog 301
 /clogged-main-sewer-line-backing-up-flooding /mainline-drain-cleaning 301

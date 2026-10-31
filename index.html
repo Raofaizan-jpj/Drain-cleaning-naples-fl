@@ -85,6 +85,42 @@
     {
       "@type": "AdministrativeArea",
       "name": "Pine Ridge"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Lely Resort"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Golden Gate"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Golden Gate Estates"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Marco Island"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Coquina Sands"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Aqualane Shores"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "The Vineyards"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Naples Manor"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Berkshire Lakes"
     }
   ],
   "hasOfferCatalog": {
@@ -211,25 +247,53 @@
             "@id": "https://draincleaningnaplesflorida.com/#plumber"
           }
         }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emergency Drain Cleaning",
+          "provider": {
+            "@type": "Plumber",
+            "@id": "https://draincleaningnaplesflorida.com/#plumber"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sewer Camera Inspection",
+          "provider": {
+            "@type": "Plumber",
+            "@id": "https://draincleaningnaplesflorida.com/#plumber"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Drain Cleaning",
+          "provider": {
+            "@type": "Plumber",
+            "@id": "https://draincleaningnaplesflorida.com/#plumber"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Drain Cleaning Cost Guide",
+          "provider": {
+            "@type": "Plumber",
+            "@id": "https://draincleaningnaplesflorida.com/#plumber"
+          }
+        }
       }
     ]
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    }
-  ]
+  }
 }
 </script>
   <script type="application/ld+json">
@@ -1274,17 +1338,16 @@
             </button>
             <div class="nav-dropdown-menu">
               <div class="dropdown-grid">
-                <a href="/sewer-cleaning">Sewer Cleaning</a>
-                <a href="/drain-snaking-cabling">Drain Snaking and Cabling</a>
+                <a href="/sewer-cleaning">Sewer &amp; Mainline Cleaning</a>
+                <a href="/drain-snaking-cabling">Drain Snaking &amp; Cabling</a>
                 <a href="/hydro-jetting">Hydro Jetting</a>
-                <a href="/clogged-drain-unclog">Clogged Drain Clearing</a>
+                <a href="/emergency-drain-cleaning">Emergency Drain Cleaning</a>
+                <a href="/sewer-camera-inspection">Sewer Camera Inspection</a>
+                <a href="/commercial-drain-cleaning">Commercial Drain Cleaning</a>
                 <a href="/kitchen-sink-drain-clog">Kitchen Sink Drain Clog</a>
-                <a href="/drain-line-leak">Drain Line Leak Repair</a>
-                <a href="/drain-pipe-repair">Drain Pipe Repair</a>
-                <a href="/shower-tub-drain-clog">Shower and Tub Drain Clog</a>
-                <a href="/dishwasher-air-gap-leak">Dishwasher Air Gap Leak</a>
+                <a href="/drain-pipe-repair">Drain Pipe Repair &amp; Leaks</a>
                 <a href="/french-drain-services">French Drain Services</a>
-                <a href="/mainline-drain-cleaning">Mainline Drain Cleaning</a>
+                <a href="/services" class="dropdown-view-all"><span>&rarr;</span> View All Services</a>
               </div>
             </div>
           </div>
@@ -1299,14 +1362,25 @@
             </button>
             <div class="nav-dropdown-menu nav-dropdown-menu-sm">
               <div class="dropdown-grid dropdown-grid-locations">
-                <a href="/port-royal">Port Royal</a>
                 <a href="/old-naples">Old Naples</a>
-                <a href="/pelican-bay">Pelican Bay</a>
-                <a href="/park-shore-the-moorings">Park Shore and The Moorings</a>
                 <a href="/north-naples">North Naples</a>
+                <a href="/pelican-bay">Pelican Bay</a>
+                <a href="/park-shore">Park Shore</a>
+                <a href="/the-moorings">The Moorings</a>
+                <a href="/park-shore-the-moorings">Park Shore &amp; The Moorings Hub</a>
+                <a href="/port-royal">Port Royal</a>
                 <a href="/naples-park">Naples Park</a>
                 <a href="/east-naples">East Naples</a>
                 <a href="/pine-ridge">Pine Ridge</a>
+                <a href="/lely-resort">Lely Resort</a>
+                <a href="/golden-gate">Golden Gate</a>
+                <a href="/golden-gate-estates">Golden Gate Estates</a>
+                <a href="/marco-island">Marco Island</a>
+                <a href="/coquina-sands">Coquina Sands</a>
+                <a href="/aqualane-shores">Aqualane Shores</a>
+                <a href="/vineyards">The Vineyards</a>
+                <a href="/naples-manor">Naples Manor</a>
+                <a href="/berkshire-lakes">Berkshire Lakes</a>
                 <a href="/locations" class="dropdown-view-all"><span>&rarr;</span> View All Service Areas</a>
               </div>
             </div>
@@ -1731,10 +1805,7 @@
         <div class="shell area-grid">
           <div class="area-copy">
             <h2>Do You Serve My Neighborhood in Naples?</h2>
-            <p>We serve homes, condos, and businesses from Old Naples to Lely Resort. Find your area below. If your
-            <p>Drain cleaning Naples FL for homes, condos, and businesses, from Old Naples to Lely Resort. Find your
-              area below. If your
-              street is not listed, call and give us your address, and we will tell you if we can come.</p>
+            <p>Drain cleaning Naples FL for homes, condos, and businesses, from Old Naples to <a href="/lely-resort" style="color:inherit;text-decoration:underline;font-weight:600;">Lely Resort</a>. Find your area below. If your street is not listed, call and give us your address, and we will tell you if we can come.</p>
             <ul class="city-list">
               <li><a href="/old-naples"><strong>Old Naples:</strong></a> Older homes and busy kitchens near Fifth Avenue
                 South and Third Street South.</li>
@@ -2088,33 +2159,32 @@
               <li><a href="/sewer-cleaning">Sewer Cleaning</a></li>
               <li><a href="/drain-snaking-cabling">Drain Snaking and Cabling</a></li>
               <li><a href="/hydro-jetting">Hydro Jetting</a></li>
+              <li><a href="/emergency-drain-cleaning">Emergency Drain Cleaning</a></li>
+              <li><a href="/sewer-camera-inspection">Sewer Camera Inspection</a></li>
+              <li><a href="/commercial-drain-cleaning">Commercial Drain Cleaning</a></li>
+              <li><a href="/drain-cleaning-cost-naples">Drain Cleaning Cost Guide</a></li>
               <li><a href="/clogged-drain-unclog">Clogged Drain Clearing</a></li>
-              <li><a href="/kitchen-sink-drain-clog">Kitchen Sink Drain Clog</a></li>
-              <li><a href="/drain-line-leak">Drain Line Leak Repair</a></li>
-              <li><a href="/drain-pipe-repair">Drain Pipe Repair</a></li>
-              <li><a href="/shower-tub-drain-clog">Shower and Tub Drain Clog</a></li>
-              <li><a href="/dishwasher-air-gap-leak">Dishwasher Air Gap Leak</a></li>
               <li><a href="/french-drain-services">French Drain Services</a></li>
-              <li><a href="/mainline-drain-cleaning">Mainline Drain Cleaning</a></li>
+              <li><a href="/services">View all services</a></li>
             </ul>
           </div>
           <div>
             <h3>Service areas</h3>
-            <!-- RL-AUTO:footer-locations START -->
             <ul>
               <li><a href="/old-naples">Old Naples</a></li>
               <li><a href="/north-naples">North Naples</a></li>
               <li><a href="/pelican-bay">Pelican Bay</a></li>
-              <li><a href="/park-shore-the-moorings">Park Shore and The Moorings</a></li>
+              <li><a href="/park-shore">Park Shore</a></li>
+              <li><a href="/the-moorings">The Moorings</a></li>
+              <li><a href="/park-shore-the-moorings">Park Shore &amp; The Moorings</a></li>
               <li><a href="/port-royal">Port Royal</a></li>
               <li><a href="/naples-park">Naples Park</a></li>
               <li><a href="/east-naples">East Naples</a></li>
               <li><a href="/pine-ridge">Pine Ridge</a></li>
+              <li><a href="/lely-resort">Lely Resort</a></li>
               <li><a href="/locations">View all areas</a></li>
             </ul>
-            <!-- RL-AUTO:footer-locations END -->
-            <p style="margin-top:14px;"><!--email_off--><a href="mailto:info@draincleaningnaplesflorida.com"
-                style="color:inherit;">info@draincleaningnaplesflorida.com</a><!--/email_off--></p>
+            <p style="margin-top:14px;"><!--email_off--><a href="mailto:info@draincleaningnaplesflorida.com" style="color:inherit;">info@draincleaningnaplesflorida.com</a><!--/email_off--></p>
             <p>Open for scheduled and urgent service.</p>
           </div>
         </div>
