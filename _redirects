@@ -7,6 +7,7 @@ http://www.draincleaningnaplesflorida.com/* https://draincleaningnaplesflorida.c
 
 # Static HTML to Clean URL Canonical Redirects
 /index.html / 301!
+/blog.html /blog 301
 /about.html /about 301
 /clogged-drain-unclog.html /clogged-drain-unclog 301
 /contact.html /contact 301
